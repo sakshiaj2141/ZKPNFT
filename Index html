@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZK-VNFT | Hackathon Winner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body { background: linear-gradient(135deg, #1E3A8A, #1F2937); font-family: 'Montserrat', sans-serif; }
+        #threejs-canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+        .neon-text { text-shadow: 0 0 10px #34D399, 0 0 20px #34D399; }
+        .slide { transition: transform 0.5s ease-in-out; }
+        .animate-pulse-slow { animation: pulse 3s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body class="text-white overflow-x-hidden">
+    <canvas id="threejs-canvas"></canvas>
+    <header class="p-4 flex justify-center items-center">
+        <div id="logo-3d" class="w-16 h-16"></div>
+        <h1 class="text-4xl font-bold neon-text ml-4">ZK-VNFT</h1>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-semibold animate-pulse-slow">Privacy-Powered NFTs</h2>
+            <p class="mt-2">Mint exclusive NFTs with Zero-Knowledge Proofs on EduChain.</p>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl neon-text">Wallet</h3>
+                <button id="connectWallet" class="mt-4 bg-green-500 text-blue-900 px-6 py-2 rounded-full hover:bg-green-400">Connect</button>
+                <p id="walletAddress" class="mt-2">Not Connected</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl neon-text">Actions</h3>
+                <button id="verifyBtn" class="mt-4 bg-green-500 text-blue-900 px-6 py-2 rounded-full hover:bg-green-400">Verify</button>
+                <button id="mintBtn" class="mt-2 bg-green-500 text-blue-900 px-6 py-2 rounded-full hover:bg-green-400">Mint NFT</button>
+                <p id="status" class="mt-2"></p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl neon-text">NFT Gallery</h3>
+                <div id="nftSlideshow" class="mt-4 flex overflow-hidden"></div>
+            </div>
+        </div>
+        <body>
+
+            <div class="container">
+                <h1>NFT Dashboard</h1>
+        
+                <!-- Slideshow Section -->
+                <div class="slideshow">
+                    <img id="nftImage" src="nft1.jpg" alt="NFT Image">
+                    <p id="nftDescription">NFT Description here</p>
+                </div>
+        
+                <!-- Buttons for NFT Actions -->
+                <div class="button-container">
+                    <button id="addMetadata">🖼 Add Metadata</button>
+                    <button id="verifyUser">🔍 User Verification</button>
+                    <button id="myNFTs">📜 My NFTs</button>
+                    <button id="transferNFT">🔄 Transfer NFT</button>
+                    <button id="tradeNFT">📈 Trade NFT</button>
+                </div>
+            </div>
+        
+    </main>
+    <footer class="p-4 text-center">
+        <p>EduChain: <a href="#" class="text-green-400">0x78eC469a36A2fD2d4833211aBe023615439dA92F</a></p>
+    </footer>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Connection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MetaMask Connection</h1>
+    <p id="status">Statically Not Connected</p>
+    <button id="connectButton">Connect MetaMask</button>
+    <script src="script.js"></script>
+</body>
+</html>
