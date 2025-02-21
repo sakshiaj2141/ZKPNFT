@@ -2,7 +2,7 @@
 
 A **Zero-Knowledge Proof (ZKP)-based NFT** is a non-fungible token (NFT) that utilizes zero-knowledge proofs to verify users' eligibility without revealing their private data. Zero-knowledge proofs allow one party (the prover) to demonstrate knowledge of a value to another party (the verifier) without disclosing the actual information. This enhances security and privacy while ensuring access is restricted to verified individuals.
 
-## Features of ZKP NFT
+## Features of ZKP NFT🖇️
 - **Privacy-Preserving:** Users can verify eligibility without exposing personal data.
 - **Replay Attack Prevention:** Each proof is used only once to prevent fraudulent reuse.
 - **Secure Minting:** Only verified users can mint NFTs using valid cryptographic proofs.
