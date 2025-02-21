@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1E3A8A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2937;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #34D399;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#wallet, #status, #actions {
+    margin: 20px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #34D399;
+    border: none;
+    padding: 10px 20px;
+    color: #1E3A8A;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #34D399;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+    button { padding: 8px 16px; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #121212;
+    color: white;
+}
+
+/* Full-screen container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 1s ease-in-out;
+}
+
+/* NFT Description */
+#nftDescription {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #bbb;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff6600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
